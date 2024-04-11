@@ -26,7 +26,7 @@ const ScrollToTop = () => {
 
     return (
         <button
-            className="fixed bottom-0 right-0 p-5 m-10 bg-manta-signal-white opacity-40 rounded-2xl"
+            className="fixed bottom-0 right-0 p-5 m-10 bg-manta-ms-black rounded-2xl"
             style={{
                 display: isInView ? 'block' : 'none',
             }}

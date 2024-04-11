@@ -24,12 +24,12 @@ export default function Template({ children }: { children: React.ReactNode }) {
                 <Link href={''}>SL3+</Link> {/*sl3+*/}
                 <Link href={''}>SL3 PRO</Link> {/*sl3pro*/}
             </div>
-            <div>
+            <div className="flex flex-col">
                 <h1>Sobre Nosotros</h1>
                 <Link href={''}>Historia</Link>
                 <Link href={''}>Sustentabilidad</Link>
             </div>
-            <div>
+            <div className="flex flex-col">
                 <h1>Ayuda</h1>
                 <Link href={''}>FAQS</Link> {/*FAQS*/}
             </div>

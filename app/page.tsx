@@ -24,11 +24,13 @@ export default function Home() {
   return (
       <>
           <main className="flex flex-col *:h-screen *:p-24 text-white">
-              <section className="relative overflow-hidden flex items-end">
+              <section className="relative overflow-hidden flex items-end bg-black/25">
                   <Video/>
                   <h1 className="text-6xl font-bold">Yeni SL3</h1>
               </section>
-              <section className="bg-manta-cool-grey"></section>
+              <section className="bg-manta-light-grey">
+                  <CardList list={cards}/>
+              </section>
               <section className="bg-manta-signal-white"></section>
           </main>
           <ScrollToTop></ScrollToTop></>
