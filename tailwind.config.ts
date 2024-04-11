@@ -20,6 +20,7 @@ const config: Config = {
         "manta-cool-grey": "#C1C5C8",
         "manta-ms-black": "#212121",
         "manta-signal-white": "#ffff",
+        "manta-light-grey":"#f8f9fa"
       }
     },
   },
