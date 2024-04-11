@@ -20,13 +20,13 @@ const cards = [
   },
 ];
 
-export default function Home() {
+export default function Sl3() {
   return (
       <>
           <main className="flex flex-col *:h-screen *:p-24 text-white">
               <section className="relative overflow-hidden flex items-end bg-black/25">
                   <Video/>
-                  <h1 className="text-6xl font-bold">Yeni SL3</h1>
+                  <h1 className="text-6xl font-bold">Nueva SL3</h1>
               </section>
               <section className="bg-manta-light-grey">
                   <CardList list={cards}/>
@@ -38,3 +38,4 @@ export default function Home() {
 
   );
 }
+
