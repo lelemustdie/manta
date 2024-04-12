@@ -1,19 +1,25 @@
 import Link from "next/link";
 import Image from "next/image";
+import Logo from "@/assets/icons/logo";
+import "./styles.css"
 
 export default function Template({ children }: { children: React.ReactNode }) {
     return <>
-    <nav className=" bg-transparent border-b-2 border-manta-red flex flex-row justify-between items-center px-[50px] py-[30px] fixed top-0 left-0 w-full z-10">
-        <Link href={'/home'}>LOGO</Link>
-        <div className="text-white text-[16px] flex flex-row gap-10  *:duration-300">
-            <Link className="hover:text-manta-dark-grey" href="/sl3">SL3</Link>
-            <Link className="hover:text-manta-dark-grey" href="/listaprecios">LISTA DE PRECIOS</Link>
-            <Link className="hover:text-manta-dark-grey" href="/contact">CONTACTO</Link>
-        </div>
-    </nav>
-    {children}
 
-        <footer className="bg-manta-ms-black grid grid-cols-4 text-white font-light justify-items-center  items-stretch *:">
+            <nav
+                className=" bg-changer bg-transparent border-b-2 border-manta-red flex flex-row justify-between items-center px-[50px] py-[30px] fixed top-0 left-0 w-full z-10">
+                <Link href={'/home'}><Logo></Logo></Link>
+                <div className="text-white text-[16px] flex flex-row gap-10  *:duration-300">
+                    <Link className="hover:text-manta-dark-grey" href="/sl3">SL3</Link>
+                    <Link className="hover:text-manta-dark-grey" href="/listaprecios">LISTA DE PRECIOS</Link>
+                    <Link className="hover:text-manta-dark-grey" href="/contact">CONTACTO</Link>
+                </div>
+            </nav>
+
+        {children}
+
+        <footer
+            className="bg-manta-ms-black grid grid-cols-4 text-white font-light justify-items-center  items-stretch *:">
             <div>
                 <Image src={'https://via.placeholder.com/150'} width={400} height={400} alt="logo"/>
 
