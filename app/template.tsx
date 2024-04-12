@@ -7,7 +7,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
     return <>
 
             <nav
-                className=" bg-changer bg-transparent border-b-2 border-manta-red flex flex-row justify-between items-center px-[50px] py-[30px] fixed top-0 left-0 w-full z-10">
+                className=" bg-changer bg-transparent border-b-2 border-manta-red flex flex-row justify-between items-center px-[50px] py-[20px] fixed top-0 left-0 w-full z-10">
                 <Link href={'/home'}><Logo></Logo></Link>
                 <div className="text-white text-[16px] flex flex-row gap-10  *:duration-300">
                     <Link className="hover:text-manta-dark-grey" href="/sl3">SL3</Link>
