@@ -3,18 +3,18 @@ import Video from "@/components/ui/video/video";
 const cards = [
   {
     src: "/SL3.png",
-    title: "Card 1",
-    description: ["Description 1", "Description 2", "Description 3"],
+    title: "SL3",
+    description: ["Cuerpo de orca blanco", "Batería Hydropack 600 ligera", "Aleta trasera fija 2.0 (FC2) para principiantes ('Learner')", "Todos los pilotos", "Batería ligera"],
   },
   {
     src: "/SL3.png",
-    title: "Card 2",
-    description: ["Description 1", "Description 2", "Description 3"],
+    title: "SL3 +",
+    description: ["Cuerpo de orca blanco", "Batería Hydropack 1000 de largo alcance", "Aleta trasera fija 2.0 (FC2) para principiantes ('Learner')", "Largo alcance"],
   },
   {
     src: "/SL3_PRO.png",
-    title: "Card 3",
-    description: ["Description 1", "Description 2", "Description 3"],
+    title: "SL3 PRO",
+    description: ["Chasis de piel de tiburón", "Batería Hydropack 1000 de largo alcance", "Aleta trasera fija 2.0 (FC2) y aleta de 'superligera' alta eficiencia (HE2)", "Desde pilotos inexpertos seguros hasta expertos (conductores intermedios y profesionales)", "Alcance más largo"],
   },
 ];
 

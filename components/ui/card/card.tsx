@@ -25,6 +25,7 @@ export default function Card({ src, title, description }: CardProps) {
         width={700}
         height={700}
         sizes="(max-width: 768px) 100vw, 100%"
+        style={{aspectRatio:"16/12"}}
       />
       <h3 className="text-2xl">{title}</h3>
       <ul className="list-disc mx-[15px]">

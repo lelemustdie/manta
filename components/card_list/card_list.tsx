@@ -29,7 +29,7 @@ const container: Variants = {
 export default function CardList({ list }: CardListProps) {
   return (
     <motion.div
-      className="container flex flex-row flex-wrap justify-around items-stretch gap-5"
+      className="container flex flex-row flex-wrap justify-around items-start gap-5"
       variants={container}
       initial="hidden"
       whileInView="visible"
