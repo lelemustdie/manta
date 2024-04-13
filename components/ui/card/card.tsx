@@ -18,7 +18,7 @@ const item: Variants = {
 
 export default function Card({ src, title, description }: CardProps) {
   return (
-    <motion.article className="text-manta-black-grey" variants={item}>
+    <motion.article className="text-manta-black-grey p-4 flex-1 min-w-80" variants={item}>
       <Image
         src={src}
         alt={title}

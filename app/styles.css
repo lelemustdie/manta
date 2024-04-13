@@ -1,21 +1,14 @@
-Nav {
-    position: sticky;
-    top: 0;
-    animation: adjust-header 20s ease-in both;
-    animation-timeline: scroll();
-    animation-range: 0 100px;
-    animation-delay-start: 5s;
+nav {
+  animation: adjust-header 20s ease-in both;
+  animation-timeline: scroll();
+  animation-range: 0 80vh;
+  height: 120px;
+  /* animation-delay-start: 5s; */
 }
 
 @keyframes adjust-header {
-
-    to {
-        background: rgba(33, 33, 33, 1);
-        font-size: 12px;
-        height: inherit;
-        border-radius: 0;
-
-
-    }
-
+  to {
+    background: rgba(33, 33, 33, 1);
+    height: 100px;
+  }
 }

@@ -1,7 +1,5 @@
 import CardList from "@/components/card_list/card_list";
-import Card from "@/components/ui/card/card";
 import Video from "@/components/ui/video/video";
-import ScrollToTop from "@/components/scrolltotop/scroll_to_top";
 const cards = [
   {
     src: "/SL3.png",
@@ -22,20 +20,15 @@ const cards = [
 
 export default function Sl3() {
   return (
-      <>
-          <main className="flex flex-col *:h-screen *:p-24 text-white">
-              <section className="relative overflow-hidden flex items-end bg-black/25">
-                  <Video/>
-                  <h1 className="text-6xl font-bold">Nueva SL3</h1>
-              </section>
-              <section className="bg-manta-light-grey">
-                  <CardList list={cards}/>
-              </section>
-              <section className="bg-manta-signal-white"></section>
-          </main>
-          <ScrollToTop></ScrollToTop></>
-
-
+    <main className="flex flex-col *:p-24 *:min-h-[100vh] text-white">
+      <section className="relative overflow-hidden flex items-end bg-black/25">
+        <Video />
+        <h1 className="text-6xl font-bold">Nueva SL3</h1>
+      </section>
+      <section className="bg-manta-light-grey grid place-content-center">
+        <CardList list={cards} />
+      </section>
+      <section className="bg-manta-signal-white"></section>
+    </main>
   );
 }
-

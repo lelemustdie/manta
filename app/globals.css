@@ -1,4 +1,3 @@
-@import url("https://use.typekit.net/sdv6set.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -31,8 +30,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
-
-header {
-
 }
