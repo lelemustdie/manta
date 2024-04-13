@@ -11,13 +11,21 @@ type CardListProps = {
 };
 
 const container: Variants = {
-  hidden: { opacity: 1, scale: 0 },
+  hidden: { x: "-100%", opacity: 0 },
   visible: {
+    x: 0,
     opacity: 1,
-    scale: 1,
     transition: {
-      delayChildren: 0.4,
       staggerChildren: 0.4,
+    },
+  },
+  exit: {
+    x: "-50%",
+    opacity: 0,
+    transition: {
+      staggerChildren: 0.4,
+      staggerDirection: -1,
+      duration: 0.5,
     },
   },
 };
@@ -27,8 +35,9 @@ export default function CardList({ list }: CardListProps) {
     <motion.div
       className="container flex flex-row justify-around items-center gap-5"
       variants={container}
+      viewport={{ once: true }}
       initial="hidden"
-      animate="visible"
+      whileInView="visible"
     >
       {list.map((item, index) => (
         <Card

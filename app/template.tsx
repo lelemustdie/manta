@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Logo from "@/assets/icons/logo";
 import "./styles.css"
+import ScrollToTop from "@/components/scrolltotop/scroll_to_top";
 
 export default function Template({ children }: { children: React.ReactNode }) {
     return <>
@@ -17,7 +18,7 @@ export default function Template({ children }: { children: React.ReactNode }) {
             </nav>
 
         {children}
-
+        <ScrollToTop></ScrollToTop>
         <footer
             className="bg-manta-ms-black grid grid-cols-4 text-white font-light justify-items-center  items-stretch *:">
             <div>
