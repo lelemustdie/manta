@@ -42,9 +42,13 @@ export default function Template({ children }: { children: React.ReactNode }) {
           <Logo></Logo>
         </Link>
         <div className="text-white text-lg flex flex-row gap-10  *:duration-300">
-          {NAVBAR_ITEMS.map(({ title, href }) => {
+          {NAVBAR_ITEMS.map(({ title, href }, index) => {
             return (
-              <Link className="hover:text-manta-dark-grey" href={href}>
+              <Link
+                className="hover:text-manta-dark-grey"
+                href={href}
+                key={`navbar-item-${index}`}
+              >
                 {title}
               </Link>
             );
@@ -63,13 +67,20 @@ export default function Template({ children }: { children: React.ReactNode }) {
             alt="logo"
           />
         </div>
-        {FOOTER_ITEMS.map(({ title, links }) => {
+        {FOOTER_ITEMS.map(({ title, links }, containerIdx) => {
           return (
-            <div className="flex flex-col gap-y-1.5 justify-center">
+            <div
+              className="flex flex-col gap-y-1.5 justify-center"
+              key={`footer-col-${containerIdx}`}
+            >
               <h1 className="font-medium">{title}</h1>
-              {links.map(({ href, title }) => {
+              {links.map(({ href, title }, index) => {
                 return (
-                  <Link href={href} className="hover:text-manta-cool-grey">
+                  <Link
+                    href={href}
+                    className="hover:text-manta-cool-grey"
+                    key={`footer-item-${index}-${containerIdx}`}
+                  >
                     {title}
                   </Link>
                 );
