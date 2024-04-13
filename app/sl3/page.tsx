@@ -20,7 +20,7 @@ const cards = [
 
 export default function Sl3() {
   return (
-    <main className="flex flex-col *:h-screen *:p-24 text-white">
+    <main className="flex flex-col *:p-24 *:min-h-[100vh] text-white">
       <section className="relative overflow-hidden flex items-end bg-black/25">
         <Video />
         <h1 className="text-6xl font-bold">Nueva SL3</h1>

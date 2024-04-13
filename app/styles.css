@@ -2,11 +2,13 @@ nav {
   animation: adjust-header 20s ease-in both;
   animation-timeline: scroll();
   animation-range: 0 80vh;
+  height: 120px;
   /* animation-delay-start: 5s; */
 }
 
 @keyframes adjust-header {
   to {
     background: rgba(33, 33, 33, 1);
+    height: 100px;
   }
 }
