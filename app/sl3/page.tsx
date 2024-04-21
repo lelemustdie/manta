@@ -1,4 +1,5 @@
 import CardList from "@/components/card_list/card_list";
+import ContactForm from "@/components/contact_form/ContactForm";
 import Button from "@/components/ui/button/Button";
 import Field from "@/components/ui/field/Field";
 import TextArea from "@/components/ui/text_area/TextArea";
@@ -53,7 +54,7 @@ export default function Sl3() {
         <Image
           src="/manta5-sl3-bw.webp"
           alt="Contacto"
-          className="absolute object-cover top-0 left-50 w-full h-full z-[-1]"
+          className="fixed object-cover top-0 left-50 w-full h-full z-[-2]"
           width={1920}
           height={1080}
           sizes="100vw"
@@ -62,44 +63,7 @@ export default function Sl3() {
           <h2 className="text-4xl text-manta-signal-white font-bold text-center mb-5">
             Contacto
           </h2>
-
-          <Field
-            label="Nombre"
-            id="name"
-            type="text"
-            placeholder="Nombre"
-            required
-          />
-          <Field
-            label="Apellido"
-            id="lastname"
-            type="text"
-            placeholder="Apellido"
-            required
-          />
-          <Field
-            label="Email"
-            id="email"
-            type="email"
-            placeholder="Email"
-            required
-          />
-          <Field
-            label="Telefono"
-            id="phone"
-            type="tel"
-            placeholder="Telefono"
-            required
-          />
-          <TextArea
-            label="Mensaje"
-            id="message"
-            placeholder="Mensaje"
-            required
-          />
-          <div className="grid place-content-end">
-            <Button className="bg-manta-red">Enviar</Button>
-          </div>
+          <ContactForm />
         </div>
       </section>
     </main>
