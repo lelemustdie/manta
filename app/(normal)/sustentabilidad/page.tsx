@@ -1,0 +1,82 @@
+import Image from "next/image";
+
+
+export default function Sustentabilidad() {
+
+    return (
+        <>
+            <div><h1 className="text-center mt-40 text-6xl text-manta-black-grey bg-transparent">Sustentabilidad</h1>
+            </div>
+            <Image
+                src="/viejobicicletero.webp"
+                alt="Contacto"
+                className="max-w-full"
+                width={6260}
+                height={3520}
+                sizes="100vw"
+            />
+
+            <section className="bg-manta-light-grey text-manta-black-grey px-28">
+                <div className="space-y-8">
+                    <h4 className="mt-8">Nueva Zelanda tiene una conexión muy profunda con el medio ambiente; el
+                        concepto de
+                        kaitiakitanga,
+                        que podemos expresar como patrocinio y protección, está profundamente arraigado en su cultura.
+                        No
+                        estamos por encima de la naturaleza; desarrollamos e innovamos constantemente en nuevas
+                        tecnologías
+                        que tienen el potencial de crear la alegría de un océano tranquilo y limpio y el futuro del
+                        transporte acuático.</h4>
+                    <h4>Kaitiakitanga no solo es un impulsor clave en Manta5 y un hito en el desarrollo de productos
+                        para la
+                        innovación, sino que los valores que aporta también nos guían sobre cómo llevar a cabo nuestro
+                        negocio de manera ética.</h4>
+                    <h4>Estamos increíblemente orgullosos de ser parte de tantas empresas que fomentan el cambio en
+                        nuestras
+                        costas. Hoy en día se consumen más productos respetuosos con el medio ambiente. Vemos una
+                        presión
+                        cada vez mayor sobre los motores de combustión interna en aguas sensibles. El hidrofoil
+                        eléctrico
+                        representa el futuro de los deportes acuáticos y, con la SL3 a la vanguardia, el futuro de la
+                        navegación recreativa.</h4>
+                </div>
+
+                <div className="grid grid-cols-2 mt-8 gap-10">
+                    <div>
+                        <h1 className="mb-4">Desarrollo de productos destacado</h1>
+                        <h4>No daña el hábitat submarino. No produce emisiones, humo de petróleo ni se observa flujo de
+                            petróleo en la superficie del agua. No hace ruido; el sonido de las revoluciones de los
+                            motores
+                            de las motos acuáticas se sustituye por un susurro</h4>
+                    </div>
+                    <div>
+                        <h1 className="mb-4">Construido para durar</h1>
+                        <h4>El Hydrofoil SL3 cuenta con un tren motriz diseñado para durar toda la vida, con una vida
+                            útil
+                            total del modelo XE-1 de primera generación que es 5 veces más larga. Está diseñado para
+                            durar,
+                            y el trabajo continúa para mejorar todos los aspectos.</h4>
+                    </div>
+                    <div>
+                        <h1 className="mb-4">Conseguí solo lo que necesitas</h1>
+                        <h4>El apoyo de energía eléctrica combinado con la energía humana ofrece un modo de transporte
+                            acuático extremadamente eficiente y respetuoso con el medio ambiente.</h4>
+                    </div>
+                    <div>
+                        <h1 className="mb-4">Eliminación responsable de la batería</h1>
+                        <h4>Manta5 se compromete con la recogida y eliminación responsable de las pilas usadas. La
+                            legislación varía según el país; por lo tanto, comuníquese con Manta5 o con un distribuidor
+                            autorizado para obtener instrucciones sobre cómo encontrar el centro de eliminación de
+                            baterías
+                            más cercano.</h4>
+                    </div>
+
+
+                </div>
+
+            </section>
+        </>
+
+
+    )
+}

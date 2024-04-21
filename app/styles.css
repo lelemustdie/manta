@@ -12,3 +12,7 @@
     height: 100px;
   }
 }
+
+td, th {
+  text-align: center;
+}
