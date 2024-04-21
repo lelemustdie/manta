@@ -1,7 +1,13 @@
-export default function Video() {
-  return (
-    <video className="w-screen h-screen object-cover -z-[1] absolute top-0 left-0" id={"video"} autoPlay loop muted>
-      <source src="/bg-video.mp4" type="video/mp4" />
-    </video>
-  );
+export default function Video({ src }: { src: string }) {
+    return (
+        <video
+            className="absolute left-0 top-0 -z-[1] h-full w-full object-cover"
+            id={"video"}
+            autoPlay
+            loop
+            muted
+        >
+            <source src={src} type="video/mp4" />
+        </video>
+    )
 }
