@@ -1,5 +1,3 @@
-export default function Nosotros(){
-    return(
-        <h1>fefwe</h1>
-    )
+export default function Nosotros() {
+    return <h1>fefwe</h1>
 }

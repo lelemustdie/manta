@@ -1,37 +1,87 @@
-import Logo from "@/assets/icons/logo";
-import Link from "next/link";
+"use client"
+import Hamburguer from "@/assets/icons/hamburguer"
+import Logo from "@/assets/icons/logo"
+import Link from "next/link"
+import { AnimatePresence, AnimationProps, motion } from "framer-motion"
+import { useState } from "react"
 
 const NAVBAR_ITEMS = [
-  { title: "SL3", href: "/sl3" },
-  { title: "Lista de precios", href: "/listaprecios" },
-  { title: "Contacto", href: "/contact" },
-];
+    { title: "SL3", href: "/sl3" },
+    { title: "Lista de precios", href: "/listaprecios" },
+    { title: "Contacto", href: "/contact" },
+]
+
+const animations: AnimationProps = {
+    initial: { x: "100%" },
+    animate: {
+        x: 0,
+        transition: {
+            x: { type: "spring", bounce: 0 },
+            duration: 0.4,
+        },
+    },
+    exit: {
+        x: "100%",
+        transition: {
+            x: { type: "spring", bounce: 0 },
+            duration: 0.4,
+        },
+    },
+}
 
 export default function NavBar({ withTransition = false }) {
-  return (
-    <nav
-      className={`border-b-2 border-manta-red flex flex-row justify-between items-center px-[15%] fixed top-0 left-0 w-full z-10 font-semibold  ${
-        withTransition
-          ? "navbar bg-transparent "
-          : "h-[100px] bg-manta-ms-black"
-      }`}
-    >
-      <Link href="/">
-        <Logo></Logo>
-      </Link>
-      <div className="text-white text-lg flex flex-row gap-10  *:duration-300">
-        {NAVBAR_ITEMS.map(({ title, href }, index) => {
-          return (
-            <Link
-              className="hover:text-manta-dark-grey"
-              href={href}
-              key={`navbar-item-${index}`}
-            >
-              {title}
+    const [isOpen, setIsOpen] = useState(false)
+
+    return (
+        <nav
+            className={`fixed left-0 top-0 z-10 flex w-full flex-row items-center justify-between border-b-2 border-manta-red px-[15%] font-semibold  ${
+                withTransition
+                    ? "navbar bg-transparent "
+                    : "h-[100px] bg-manta-ms-black"
+            }`}
+        >
+            <Link href="/">
+                <Logo className="sm:size-10" />
             </Link>
-          );
-        })}
-      </div>
-    </nav>
-  );
+            <div className="flex flex-row gap-10 text-lg text-white  *:duration-300">
+                {NAVBAR_ITEMS.map(({ title, href }, index) => {
+                    return (
+                        <Link
+                            className="duration-100 hover:text-manta-dark-grey sm:hidden"
+                            href={href}
+                            key={`navbar-item-${index}`}
+                        >
+                            {title}
+                        </Link>
+                    )
+                })}
+                <Hamburguer
+                    className="hidden size-8 sm:block"
+                    onClick={() => setIsOpen(!isOpen)}
+                />
+            </div>
+            <AnimatePresence>
+                {isOpen && (
+                    <motion.div
+                        initial={animations.initial}
+                        animate={animations.animate}
+                        exit={animations.exit}
+                        className="absolute left-0 top-full flex h-screen w-full flex-col gap-10 bg-manta-ms-black p-10 *:text-2xl"
+                    >
+                        {NAVBAR_ITEMS.map(({ title, href }, index) => {
+                            return (
+                                <Link
+                                    className="hover:text-manta-dark-grey"
+                                    href={href}
+                                    key={`navbar-item-${index}`}
+                                >
+                                    {title}
+                                </Link>
+                            )
+                        })}
+                    </motion.div>
+                )}
+            </AnimatePresence>
+        </nav>
+    )
 }

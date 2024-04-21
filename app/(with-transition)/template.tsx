@@ -1,10 +1,10 @@
-import NavBar from "@/components/template/navbar/NavBar";
+import NavBar from "@/components/template/navbar/NavBar"
 
 export default function Template({ children }: { children: React.ReactNode }) {
-  return (
-    <>
-      <NavBar withTransition />
-      {children}
-    </>
-  );
+    return (
+        <>
+            <NavBar withTransition />
+            {children}
+        </>
+    )
 }

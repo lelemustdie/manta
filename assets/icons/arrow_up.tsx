@@ -1,5 +1,5 @@
 import * as React from "react"
-const ArrowUp = (props:any) => (
+const ArrowUp = (props: any) => (
     <svg
         width={24}
         height={24}

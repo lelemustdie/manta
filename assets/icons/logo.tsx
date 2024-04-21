@@ -5,6 +5,7 @@ const Logo = (props: any) => (
         width={68}
         height={57}
         fill="none"
+        viewBox="0 0 65 40"
         {...props}
     >
         <g filter="url(#a)">
@@ -35,7 +36,10 @@ const Logo = (props: any) => (
                 <feGaussianBlur stdDeviation={2} />
                 <feComposite in2="hardAlpha" operator="out" />
                 <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_2_11" />
+                <feBlend
+                    in2="BackgroundImageFix"
+                    result="effect1_dropShadow_2_11"
+                />
                 <feBlend
                     in="SourceGraphic"
                     in2="effect1_dropShadow_2_11"
