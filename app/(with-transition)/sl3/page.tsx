@@ -39,15 +39,15 @@ const cards = [
 
 export default function Sl3() {
     return (
-        <main className="flex flex-col text-white *:min-h-[100vh] *:p-24">
+        <main className="flex flex-col text-white *:min-h-[100vh] *:p-24 *:sm:p-5">
             <section className="relative flex items-end overflow-hidden bg-black/25">
                 <Video src={"/bg-video.mp4"} />
-                <h1 className="text-6xl font-bold">Nueva SL3</h1>
+                <h1 className="text-6xl font-bold sm:mb-10">Nueva SL3</h1>
             </section>
             <section className="grid place-content-center bg-manta-light-grey">
                 <CardList list={cards} />
             </section>
-            <section className="relative grid grid-cols-2 overflow-hidden">
+            <section className="relative grid grid-cols-2 overflow-hidden sm:grid-cols-1">
                 <Image
                     src="/manta5-sl3-bw.webp"
                     alt="Contacto"
