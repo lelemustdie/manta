@@ -42,7 +42,7 @@ export default function Footer() {
             className="flex flex-col gap-y-1.5 justify-center"
             key={`footer-col-${containerIdx}`}
           >
-            <h1 className="font-medium">{title}</h1>
+            <h4 className="font-medium">{title}</h4>
             {links.map(({ href, title }, index) => {
               return (
                 <Link
