@@ -44,7 +44,7 @@ export default function Sl3() {
   return (
     <main className="flex flex-col *:p-24 *:min-h-[100vh] text-white">
       <section className="relative overflow-hidden flex items-end bg-black/25">
-        <Video />
+        <Video src={"/bg-video.mp4"}/>
         <h1 className="text-6xl font-bold">Nueva SL3</h1>
       </section>
       <section className="bg-manta-light-grey grid place-content-center">
