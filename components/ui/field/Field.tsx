@@ -1,5 +1,6 @@
 type FieldProps = {
   id: string;
+  name: string;
   label: string;
   type: string;
   placeholder: string;
@@ -8,6 +9,7 @@ type FieldProps = {
 
 export default function Field({
   id,
+  name,
   label,
   type,
   placeholder,
@@ -15,11 +17,12 @@ export default function Field({
 }: FieldProps) {
   return (
     <div className="flex flex-col">
-      <label htmlFor={id} className="text-manta-signal-white text-lg font-bold">
+      <label htmlFor={id} className="text-manta-signal-white text-lg">
         {label}
       </label>
       <input
         id={id}
+        name={name}
         type={type}
         placeholder={placeholder}
         required={required}
