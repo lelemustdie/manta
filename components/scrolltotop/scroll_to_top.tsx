@@ -7,8 +7,7 @@ const ScrollToTop = () => {
     const [isInView, setIsInView] = useState(false);
 
     const handleScroll = () => {
-        const filters = document.getElementById('video');
-        if (filters && window.scrollY > filters?.offsetTop) {
+        if (window.scrollY > 300) {
             setIsInView(true);
         } else {
             setIsInView(false);

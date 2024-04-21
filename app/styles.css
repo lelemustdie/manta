@@ -1,4 +1,4 @@
-nav {
+.navbar {
   animation: adjust-header 20s ease-in both;
   animation-timeline: scroll();
   animation-range: 0 80vh;
