@@ -16,7 +16,7 @@ export default function NavBar({ withTransition = false }) {
           : "h-[100px] bg-manta-ms-black"
       }`}
     >
-      <Link href={"/home"}>
+      <Link href="/">
         <Logo></Logo>
       </Link>
       <div className="text-white text-lg flex flex-row gap-10  *:duration-300">

@@ -94,8 +94,8 @@ const FAQS = [
 
 const FAQ = () => {
   return (
-    <section className="m-28">
-      <div className="text-manta-signal-white text-5xl mt-40 mb-4">
+    <section>
+      <div className="text-manta-signal-white text-5xl mb-4">
         <h1>FAQS</h1>
       </div>
 
