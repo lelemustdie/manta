@@ -87,7 +87,7 @@ const FAQ = () => {
     return (
         <section>
             <div className="mb-4 text-5xl text-manta-signal-white">
-                <h1>FAQS</h1>
+                <h1 className="sm:text-center">FAQS</h1>
             </div>
 
             <div className="rounded-lg bg-gray-200 p-8 text-manta-black-grey">

@@ -10,9 +10,9 @@ const Accordion = ({ title, answer }) => {
         <div className="py-2">
             <button
                 onClick={() => setAccordionOpen(!accordionOpen)}
-                className="flex w-full justify-between"
+                className="flex w-full items-center justify-between"
             >
-                <span className="text-lg">{title}</span>
+                <span className="flex-1 text-start text-lg sm:text-base">{title}</span>
                 {/* {accordionOpen ? <span>-</span> : <span>+</span>} */}
                 <svg
                     className={`ml-8 shrink-0 ${

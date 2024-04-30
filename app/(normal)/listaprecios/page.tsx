@@ -1,10 +1,11 @@
 export default function ListaPrecios() {
     return (
-        <section className="min-h-96 bg-manta-signal-white">
-            <div className="flex flex-auto">
-                <table className="mb-40 mt-40 table-fixed text-manta-black-grey">
+        <section className="!min-h-[calc(100vh-300px)] bg-manta-signal-white">
+            <h2 className="text-black">Lista de precios</h2>
+            <div className="flex flex-auto overflow-x-auto">
+                <table className="table-fixed text-manta-black-grey">
                     <thead>
-                        <tr className="bg-manta-red text-manta-light-grey">
+                        <tr className="bg-manta-red text-manta-light-grey *:p-4">
                             <th>Modelo</th>
                             <th>Tipo de motor/potencia (vatios)</th>
                             <th>Capacidad de la batería (w)</th>
@@ -17,9 +18,9 @@ export default function ListaPrecios() {
                             <th>PRECIO DE LISTA (USD)</th>
                         </tr>
                     </thead>
-                    <tbody className="">
+                    <tbody className="[&_td]:p-5">
                         <tr className="bg-manta-light-grey">
-                            <td>SL3</td>
+                            <td className="font-bold">SL3</td>
                             <td>Eléctrico / 2500</td>
                             <td>600W</td>
                             <td>iones de litio</td>
@@ -31,7 +32,7 @@ export default function ListaPrecios() {
                             <td>-</td>
                         </tr>
                         <tr>
-                            <td>SL3+</td>
+                            <td className="font-bold">SL3+</td>
                             <td>Eléctrico / 2500</td>
                             <td>1000W</td>
                             <td>iones de litio</td>
@@ -43,7 +44,7 @@ export default function ListaPrecios() {
                             <td>-</td>
                         </tr>
                         <tr className="bg-manta-light-grey">
-                            <td>SL3 PRO</td>
+                            <td className="font-bold">SL3 PRO</td>
                             <td>Eléctrico / 2500</td>
                             <td>1000W</td>
                             <td>iones de litio</td>
