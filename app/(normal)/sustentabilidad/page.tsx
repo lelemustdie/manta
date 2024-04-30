@@ -4,14 +4,14 @@ import Video from "@/components/ui/video/video"
 export default function Sustentabilidad() {
     return (
         <>
-            <div className="relative h-96">
-                <h1 className="mt-40 bg-transparent text-center text-6xl text-white">
+            <div className="relative h-96 flex items-center justify-center">
+                <h1 className="bg-transparent text-center text-6xl sm:text-4xl text-white">
                     Sustentabilidad
                 </h1>
                 <Video src="/sustentabilidad.mp4" />
             </div>
 
-            <section className="bg-manta-light-grey !p-28 text-manta-black-grey">
+            <section className="bg-manta-light-grey sm:!p-12 text-manta-black-grey">
                 <div className="space-y-8">
                     <h4>
                         Nueva Zelanda tiene una conexión muy profunda con el
@@ -42,7 +42,7 @@ export default function Sustentabilidad() {
                     </h4>
                 </div>
 
-                <div className="mt-8 grid grid-cols-2 gap-10">
+                <div className="mt-8 grid grid-cols-2 sm:grid-cols-1 gap-10">
                     <div>
                         <h2 className="mb-4 font-medium">
                             Desarrollo de productos destacado
