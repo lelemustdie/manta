@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+
 export default function Nosotros() {
     return <>
         <section className="relative !h-[55vh] flex items-center justify-center">
