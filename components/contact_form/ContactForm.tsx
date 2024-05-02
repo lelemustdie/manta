@@ -66,9 +66,9 @@ export default function ContactForm() {
                 placeholder="Mensaje"
                 required
             />
-            <div className="grid place-content-end">
+            <div className="grid place-content-end sm:place-content-center">
                 <Button
-                    className="bg-manta-red"
+                    className="bg-manta-red sm:w-36 justify-center opacity-70 hover:opacity-100"
                     type={loading ? "loading" : "default"}
                 >
                     Enviar
