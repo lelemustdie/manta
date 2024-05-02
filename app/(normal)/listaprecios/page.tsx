@@ -7,39 +7,40 @@ import Battery from "@/assets/icons/battery";
 import Carbonfoils from "@/assets/icons/carbonfoils";
 import Ip from "@/assets/icons/ipx8";
 import SvgDisplay from "@/components/svg_title/SvgtITitlte";
+import Image from "next/image";
 
 const svgs = [
     {
-        src:<Throttle className='size-20'/>,
-        title:'Throttle override'
+        src: <Throttle className='size-20'/>,
+        title: 'Throttle override'
     },
     {
-        src:<Assist className='size-20'/>,
-        title:'Variable electric assist'
+        src: <Assist className='size-20'/>,
+        title: 'Variable electric assist'
     },
     {
-        src:<Ridetime className='size-20'/>,
-        title:'Up to 4.5hs ride time'
+        src: <Ridetime className='size-20'/>,
+        title: 'Up to 4.5hs ride time'
     },
     {
-        src:<Elt className='size-20'/>,
-        title:'Easy launch technology'
+        src: <Elt className='size-20'/>,
+        title: 'Easy launch technology'
     },
     {
-        src:<Transport className='size-20'/>,
-        title:'In-car transport'
+        src: <Transport className='size-20'/>,
+        title: 'In-car transport'
     },
     {
-        src:<Battery className='size-20' />,
-        title:'Toolless detachable battery'
+        src: <Battery className='size-20'/>,
+        title: 'Toolless detachable battery'
     },
     {
-        src:<Carbonfoils className='size-20'/>,
-        title:'Carbon fibre foils'
+        src: <Carbonfoils className='size-20'/>,
+        title: 'Carbon fibre foils'
     },
     {
-        src:<Ip className='size-20'/>,
-        title:'IP67 Motor and housing'
+        src: <Ip className='size-20'/>,
+        title: 'IP67 Motor and housing'
     }
 
 ]
@@ -47,10 +48,47 @@ const svgs = [
 export default function ListaPrecios() {
     return (
         <>
-            <section className="bg-manta-light-grey sm:!h-fit ">
-                <h1 className="text-manta-ms-black text-4xl mb-2 sm:text-2xl">Características</h1>
+            <section className="bg-manta-light-grey text-manta-ms-black sm:!h-fit ">
+                <h1 className=" text-4xl mb-2 sm:text-2xl">Características</h1>
 
                 <SvgDisplay list={svgs}/>
+                <div className="grid grid-cols-2 p-24 gap-24">
+
+                    <div>
+                        <h2 className="text-[32px] mb-4">Mantenimiento</h2>
+                        <ul className="gap-2 flex flex-col">
+                            <li>Mantenimiento ultra bajo, sin componentes de alto desgaste como en la mayoría de las
+                                bicicletas.</li>
+
+                            <li>Limpieza simple con manguera después de usar en agua salada.</li>
+
+                            <li>El acceso para servicio/reemplazo de módulos requiere menos herramientas.</li>
+
+                            <li>Cuando ocurre una falla, se reemplaza el
+                                módulo afectado, no el ensamble completo.</li>
+
+                            </ul>
+
+                    </div>
+                    <div>
+                        <h2 className="text-[32px] mb-4">Velocidad</h2>
+                        <ul className="gap-2 flex flex-col">
+                            <li>Varía según las condiciones del viaje, peso del conductor y habilidad.</li>
+
+                            <li>Próximamente: Hélice y foil de velocidad para aumentar la velocidad máxima.</li>
+
+                            <li>Velocidad máxima: 20 km/h | 12 mph</li>
+
+                            <li>Velocidad de crucero: 11 km/h | 7 mph</li>
+
+                            <li>Velocidad mínima: 6 km/h | 4 mph</li>
+
+                        </ul>
+
+                    </div>
+                </div>
+
+                <Image src={"/HERO_Short_mechanical.jpg"} alt={"image bike"} width={1920} height={400} />
 
 
             </section>
