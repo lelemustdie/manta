@@ -85,7 +85,7 @@ const FAQS = [
 
 const FAQ = () => {
     return (
-        <section>
+        <section className="!h-fit">
             <div className="mb-4 text-5xl text-manta-signal-white">
                 <h1 className="sm:text-center">FAQS</h1>
             </div>
