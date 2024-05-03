@@ -179,6 +179,18 @@ export default function ListaPrecios() {
                 </div>
                 <h5 className="text-manta-ms-black mt-9">Precios válidos para <b>Argentina</b> y <b>Uruguay</b></h5>
             </section>
+            <div className='grid grid-cols-2 justify-center bg-white sm:flex-col sm:flex'>
+                <div>
+                    <h1 className='text-manta-ms-black text-7xl sm:text-2xl sm:text-center'>SL3</h1>
+                    <Image src={"/SL3.png"} alt={"sl3"} width={4562} height={3206} sizes={'100%'}/>
+                </div>
+               <div>
+                   <h1 className='text-manta-ms-black text-7xl sm:text-2xl sm:text-center'>SL3 PRO</h1>
+                   <Image src={"/SL3_PRO.png"} alt={"sl3pro"} width={4961} height={3194}/>
+               </div>
+
+            </div>
+
 
         </>
 
