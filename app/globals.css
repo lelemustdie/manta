@@ -35,7 +35,7 @@
     h6 {
         @apply text-sm;
     }
-    ul{
+    ul {
         list-style: initial;
     }
 }
@@ -52,6 +52,9 @@ body {
 @layer utilities {
     .text-balance {
         text-wrap: balance;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
     }
 }
 

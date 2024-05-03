@@ -41,8 +41,8 @@ const cards = [
 
 export default function Sl3() {
     return (
-        <main className="flex flex-col text-white *:min-h-[100vh] *:p-24 *:sm:p-5">
-            <section className="relative flex items-end overflow-hidden bg-black/25">
+        <>
+            <section className="relative flex items-end overflow-hidden">
                 <Video src={"/bg-video.mp4"} />
                 <h1 className="text-6xl font-bold sm:mb-10">Nueva SL3</h1>
             </section>
@@ -74,6 +74,6 @@ export default function Sl3() {
                     <ContactForm />
                 </div>
             </section>
-        </main>
+        </>
     )
 }
