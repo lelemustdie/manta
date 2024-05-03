@@ -12,31 +12,31 @@ export type Slide = {
 
 const slides: Slide[] = [
     {
-        src: "/slides/SL3_1.png",
+        src: "/slides/SL3_1.webp",
         alt: "SL3 front foil",
     },
     {
-        src: "/slides/SL3_2.png",
+        src: "/slides/SL3_2.webp",
         alt: "sl3 rear foil",
     },
     {
-        src: "/slides/SL3_3.png",
+        src: "/slides/SL3_3.webp",
         alt: "sl3 rear foil",
     },
     {
-        src: "/slides/SL3_4.png",
+        src: "/slides/SL3_4.webp",
         alt: "sl3 rear foil",
     },
     {
-        src: "/slides/SL3_5.png",
+        src: "/slides/SL3_5.webp",
         alt: "sl3 rear foil",
     },
     {
-        src: "/slides/SL3_6.png",
+        src: "/slides/SL3_6.webp",
         alt: "sl3 pro remote",
     },
     {
-        src: "/slides/SL3_7.png",
+        src: "/slides/SL3_7.webp",
         alt: "sl3 pro remote",
     },
 ]

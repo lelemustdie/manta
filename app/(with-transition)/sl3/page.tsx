@@ -6,7 +6,7 @@ import Button from "@/components/ui/button/Button"
 import Link from "next/link"
 const cards = [
     {
-        src: "/SL3.png",
+        src: "/SL3.webp",
         title: "SL3",
         description: [
             "Cuerpo de orca blanco",
@@ -17,7 +17,7 @@ const cards = [
         ],
     },
     {
-        src: "/SL3.png",
+        src: "/SL3.webp",
         title: "SL3 +",
         description: [
             "Cuerpo de orca blanco",
@@ -27,7 +27,7 @@ const cards = [
         ],
     },
     {
-        src: "/SL3_PRO.png",
+        src: "/SL3_PRO.webp",
         title: "SL3 PRO",
         description: [
             "Chasis de piel de tiburón",

@@ -11,7 +11,7 @@ export default function Nosotros() {
 
                 <Image
                     className="fixed top-0 z-[-2] h-full w-full object-cover "
-                    src={"/Father and Son riding the SL3.jpg"}
+                    src={"/Father and Son riding the SL3.webp"}
                     width={8640}
                     height={4860}
                     alt={"bike"}
@@ -37,7 +37,7 @@ export default function Nosotros() {
                 </h3>
                 <div className="grid flex-1 place-content-center">
                     <Image
-                        src={"/bici.png"}
+                        src={"/bici.webp"}
                         alt={"bici"}
                         width={600}
                         height={423}
