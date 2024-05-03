@@ -90,7 +90,7 @@ const FAQ = () => {
                 <h1 className="sm:text-center">FAQS</h1>
             </div>
 
-            <div className="rounded-lg bg-gray-200 p-8 text-manta-black-grey">
+            <div className="rounded-lg bg-manta-signal-white p-8 text-manta-black-grey">
                 {FAQS.map(({ question, answer }, index) => (
                     <Accordion key={index} title={question} answer={answer} />
                 ))}
