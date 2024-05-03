@@ -2,6 +2,8 @@ import CardList from "@/components/card_list/card_list"
 import ContactForm from "@/components/contact_form/ContactForm"
 import Video from "@/components/ui/video/video"
 import Image from "next/image"
+import Button from "@/components/ui/button/Button";
+import Link from "next/link";
 const cards = [
     {
         src: "/SL3.png",
@@ -46,6 +48,15 @@ export default function Sl3() {
             </section>
             <section className="grid place-content-center bg-manta-light-grey">
                 <CardList list={cards} />
+                <div className='flex justify-center'>
+                    <Link href={"/listaprecios"}>
+                        <Button className='flex flex-col border-transparent text-manta-signal-white bg-red-500 w-72 opacity-90 hover:opacity-100'>
+                            Características
+                        </Button>
+                    </Link>
+
+                </div>
+
             </section>
             <section className="relative grid grid-cols-2 overflow-hidden sm:grid-cols-1">
                 <Image
