@@ -48,52 +48,79 @@ const svgs = [
 export default function ListaPrecios() {
     return (
         <>
-            <section className="bg-manta-light-grey text-manta-ms-black sm:!h-fit ">
-                <h1 className=" text-4xl mb-2 sm:text-2xl">Características</h1>
+            <section className="bg-manta-light-grey text-manta-ms-black !h-fit  ">
+                <h1 className=" text-4xl mb-2  font-medium sm:text-3xl justify-center flex">Características</h1>
 
                 <SvgDisplay list={svgs}/>
-                <div className="grid grid-cols-2 p-24 gap-24">
+                <div className="grid grid-cols-2 p-24 pb-0 gap-24 sm:flex flex-col sm:gap-8 sm:p-4">
 
-                    <div>
-                        <h2 className="text-[32px] mb-4">Mantenimiento</h2>
-                        <ul className="gap-2 flex flex-col">
-                            <li>Mantenimiento ultra bajo, sin componentes de alto desgaste como en la mayoría de las
-                                bicicletas.</li>
+                    <div className="grid-rows-2 grid gap-24 sm:gap-8 sm:flex flex-col">
+                        <div>
+                            <h2 className="text-[25px] mb-4 font-medium">Mantenimiento</h2>
+                            <ul className="gap-2 flex flex-col">
+                                <li>Mantenimiento ultra bajo, sin componentes de alto desgaste como en la mayoría de las
+                                    bicicletas.</li>
 
-                            <li>Limpieza simple con manguera después de usar en agua salada.</li>
+                                <li>Limpieza simple con manguera después de usar en agua salada.</li>
 
-                            <li>El acceso para servicio/reemplazo de módulos requiere menos herramientas.</li>
+                                <li>El acceso para servicio/reemplazo de módulos requiere menos herramientas.</li>
 
-                            <li>Cuando ocurre una falla, se reemplaza el
-                                módulo afectado, no el ensamble completo.</li>
+                                <li>Cuando ocurre una falla, se reemplaza el
+                                    módulo afectado, no el ensamble completo.</li>
 
                             </ul>
+                        </div>
+                        <div>
+                            <h2 className="text-[25px] mb-4 font-medium">Dimensiones Ensambladas</h2>
+                            <ul className="gap-2 flex flex-col">
+                                <li>1.4 m Alto x 2 m Ancho x 2.2 m Largo | 4.5 ft Alto, 6.5 ft Ancho, 7.2 ft Largo</li>
+                            </ul>
+                        </div>
+
 
                     </div>
-                    <div>
-                        <h2 className="text-[32px] mb-4">Velocidad</h2>
-                        <ul className="gap-2 flex flex-col">
-                            <li>Varía según las condiciones del viaje, peso del conductor y habilidad.</li>
+                    <div className="grid-rows-2 grid gap-24 sm:gap-8 sm:flex sm:flex-col">
+                        <div>
+                            <h2 className="text-[25px] mb-4 font-medium">Velocidad</h2>
+                            <ul className="gap-2 flex flex-col">
+                                <li>Varía según las condiciones del viaje, peso del conductor y habilidad.</li>
 
-                            <li>Próximamente: Hélice y foil de velocidad para aumentar la velocidad máxima.</li>
+                                <li>Próximamente: Hélice y foil de velocidad para aumentar la velocidad máxima.</li>
 
-                            <li>Velocidad máxima: 20 km/h | 12 mph</li>
+                                <li>Velocidad máxima: 20 km/h | 12 mph</li>
 
-                            <li>Velocidad de crucero: 11 km/h | 7 mph</li>
+                                <li>Velocidad de crucero: 11 km/h | 7 mph</li>
 
-                            <li>Velocidad mínima: 6 km/h | 4 mph</li>
+                                <li>Velocidad mínima: 6 km/h | 4 mph</li>
 
-                        </ul>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h2 className="text-[25px] mb-4 font-medium">Tiempo de Carga de la Batería</h2>
+                            <ul className="gap-2 flex flex-col">
+                                <li>
+                                    Hydropack 1000: 3 horas
+                                </li>
+                                <li>Hydropack 600: 2 horas</li>
+                            </ul>
+                        </div>
+
+
 
                     </div>
                 </div>
+                <div className="flex flex-col items-center">
+                    <h2 className="text-[25px] mb-6 font-medium">Duración del viaje</h2>
+                    <Image src={"/Ride_Duration.png"} alt={"ride duration"} width={1100} height={140}/>
+                </div>
 
-                <Image src={"/HERO_Short_mechanical.jpg"} alt={"image bike"} width={1920} height={400} />
+
 
 
             </section>
             <section className="!h-fit bg-manta-signal-white">
-                <h2 className="text-black text-4xl mb-9 sm:text-2xl">Lista de precios</h2>
+                <h2 className="text-black font-medium text-4xl mb-9 sm:text-3xl">Lista de precios</h2>
                 <div className="flex flex-auto overflow-x-auto">
                     <table className="table-fixed text-manta-black-grey">
                         <thead>
