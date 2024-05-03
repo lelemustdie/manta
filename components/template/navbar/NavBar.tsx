@@ -41,7 +41,7 @@ export default function NavBar({ withTransition = false }) {
             }`}
         >
             <Link href="/">
-                <Logo className="sm:size-10" />
+                <h1 className=" bg-gradient-to-r from-manta-red via-red-900 to-manta-red inline-block text-transparent bg-clip-text font-medium">AQUABIKE</h1>
             </Link>
             <div className="flex flex-row gap-10 text-lg text-white  *:duration-300">
                 {NAVBAR_ITEMS.map(({ title, href }, index) => {

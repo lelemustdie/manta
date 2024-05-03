@@ -74,12 +74,17 @@ const FAQS = [
         answer: `El Hydrofoiler SL3 incluye conectores de acoplamiento rápido que permiten dividir la bicicleta en 5 secciones de montaje inferior. Puedes transportarlo dentro de un vehículo y llevar cada módulo al agua a mano.`,
     },
     {
-        question: "Firebase or Supabase?",
-        answer: "I am using Supabase!",
+        question: "¿Cómo puedo cargar las baterías Hydropack?",
+        answer: "Retira el Hydropack del cuadro de la bicicleta. " +
+            "El Hydropack utiliza un cargador especial que se enchufa a un enchufe de pared estándar de 220-240V o 110-120V.",
     },
     {
-        question: "Firebase or Supabase?",
-        answer: "I am using Supabase!",
+        question: "¿Cuánto tiempo tarda en recargarse?",
+        answer: "Tiempo de carga: aproximadamente 3 horas para el Hydropack 600 y 5 horas para el Hydropack 1000. Próximamente estará disponible la opción de supercargador.",
+    },
+    {
+        question: "¿Cuánto dura la carga de una batería?",
+        answer: "Este tiempo depende de cómo conduzcas. El Hydropack 1000 y el Hydropack 600 ofrecen un tiempo máximo de conducción de más de 4.5 y 3.5 horas respectivamente cuando se conduce con bajo nivel de asistencia eléctrica. Si eliges conducir solo con el acelerador en modo reforzado, puedes agotar la batería en menos de 1 hora. Cuanto más pedalees, más durará la batería.",
     },
 ]
 
@@ -90,7 +95,7 @@ const FAQ = () => {
                 <h1 className="sm:text-center">FAQS</h1>
             </div>
 
-            <div className="rounded-lg bg-manta-signal-white p-8 text-manta-black-grey">
+            <div className="rounded-lg bg-white p-8 text-manta-black-grey">
                 {FAQS.map(({ question, answer }, index) => (
                     <Accordion key={index} title={question} answer={answer} />
                 ))}

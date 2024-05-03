@@ -29,12 +29,7 @@ export default function Footer() {
     return (
         <footer className="grid h-[200px] grid-cols-footer items-stretch justify-items-center bg-black font-light text-white sm:h-full sm:auto-rows-min sm:grid-cols-1 sm:gap-5 sm:py-10">
             <div className="flex flex-col justify-center gap-y-1.5">
-                <Image
-                    src={"https://via.placeholder.com/150"}
-                    width={150}
-                    height={150}
-                    alt="logo"
-                />
+                <h1 className=" bg-gradient-to-r from-manta-red via-red-900 to-manta-red inline-block text-transparent bg-clip-text font-medium">AQUABIKE</h1>
             </div>
             {FOOTER_ITEMS.map(({ title, links }, containerIdx) => {
                 return (

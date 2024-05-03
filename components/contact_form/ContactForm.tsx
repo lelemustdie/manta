@@ -32,7 +32,7 @@ export default function ContactForm() {
                 name="name"
                 id="name"
                 type="text"
-                placeholder="Nombre"
+                placeholder="John"
                 required
             />
             <Field
@@ -40,7 +40,7 @@ export default function ContactForm() {
                 name="lastname"
                 id="lastname"
                 type="text"
-                placeholder="Apellido"
+                placeholder="Doe"
                 required
             />
             <Field
@@ -48,7 +48,7 @@ export default function ContactForm() {
                 name="email"
                 id="email"
                 type="email"
-                placeholder="Email"
+                placeholder="ejemplo@mail.com"
                 required
             />
             <Field
@@ -56,14 +56,14 @@ export default function ContactForm() {
                 name="phone"
                 id="phone"
                 type="tel"
-                placeholder="Telefono"
+                placeholder="1122334455"
                 required
             />
             <TextArea
                 label="Mensaje"
                 name="message"
                 id="message"
-                placeholder="Mensaje"
+                placeholder="¡Esperamos tu mensaje/consulta!"
                 required
             />
             <div className="grid place-content-end sm:place-content-center">
