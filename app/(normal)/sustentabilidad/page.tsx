@@ -11,7 +11,7 @@ export default function Sustentabilidad() {
                 <Video src="/sustentabilidad.mp4" />
             </div>
 
-            <section className="bg-manta-light-grey sm:!p-12 text-manta-black-grey">
+            <section className="bg-manta-light-grey !h-fit sm:!p-12 text-manta-black-grey">
                 <div className="space-y-8">
                     <h4>
                         Nueva Zelanda tiene una conexión muy profunda con el
