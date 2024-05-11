@@ -25,10 +25,9 @@ export default function Card({ src, title, description }: CardProps) {
             <Image
                 src={src}
                 alt={title}
-                width={700}
-                height={700}
-                sizes="(max-width: 768px) 100vw, 100%"
-                style={{ aspectRatio: "16/12" }}
+                width={498}
+                height={340}
+                priority={true}
             />
             <h3 className="text-2xl">{title}</h3>
             <ul className="mx-[15px] list-disc">

@@ -21,7 +21,7 @@ const FOOTER_ITEMS = [
         title: "Ayuda",
         links: [
             { title: "FAQS", href: "/faqs" },
-            { title: "Contacto", href: "/contact" },
+            { title: "Contacto", href: "/contacto" },
         ],
     },
 ]

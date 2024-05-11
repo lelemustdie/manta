@@ -56,7 +56,7 @@ export default function Sl3() {
                     </Link>
                 </div>
             </section>
-            <section className="relative grid grid-cols-2 overflow-hidden sm:grid-cols-1">
+            <section className="relative grid !h-fit !min-h-screen w-full grid-cols-2 overflow-hidden sm:grid-cols-1">
                 <Image
                     src="/manta5-sl3-bw.webp"
                     alt="Contacto"

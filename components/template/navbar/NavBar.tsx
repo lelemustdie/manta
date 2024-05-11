@@ -7,7 +7,7 @@ import { useEffect, useState } from "react"
 const NAVBAR_ITEMS = [
     { title: "SL3", href: "/sl3" },
     { title: "Lista de precios / Características", href: "/listaprecios" },
-    { title: "Contacto", href: "/contact" },
+    { title: "Contacto", href: "/contacto" },
 ]
 
 const animations: AnimationProps = {

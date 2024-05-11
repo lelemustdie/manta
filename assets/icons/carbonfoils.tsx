@@ -1,9 +1,9 @@
 import * as React from "react"
-const CarbonFoils = (props:any) => (
+const CarbonFoils = (props: any) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         id="Layer_2"
-        viewBox="0 0 183.23 89.78"
+        viewBox="38 10 79 57"
         {...props}
     >
         <defs>
