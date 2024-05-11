@@ -17,23 +17,16 @@ export default function Nosotros() {
                     alt={"bike"}
                 />
             </section>
-            <section className="flex !h-fit items-center justify-between gap-10 bg-manta-light-grey text-manta-ms-black md:flex-col md:!p-10">
+            <section
+                className="flex !h-fit items-center justify-between gap-10 bg-manta-light-grey text-manta-ms-black md:flex-col md:!p-10">
                 <h3 className="flex-1 items-center">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Mauris in libero sed justo pulvinar faucibus. Vestibulum
-                    ante ipsum primis in faucibus orci luctus et ultrices
-                    posuere cubilia Curae; Nulla facilisi. Cras lacinia metus id
-                    ipsum convallis, in fermentum magna dictum. Sed sed enim vel
-                    arcu fermentum vehicula. Integer lacinia, odio sed
-                    vestibulum pharetra, dolor purus placerat nisl, sed
-                    consectetur enim ante vel ligula. Pellentesque habitant
-                    morbi tristique senectus et netus et malesuada fames ac
-                    turpis egestas. Sed eu sapien aliquam, rutrum mauris vel,
-                    cursus lacus. Sed euismod convallis metus vel tincidunt.
-                    Nullam viverra, nulla non convallis tristique, nisl odio
-                    finibus leo, vel aliquet risus nisi non nisi. Maecenas
-                    sollicitudin, mi nec tristique efficitur, risus libero
-                    tristique quam, et sollicitudin metus neque eget justo.
+                    HMSA es una empresa de ingenieros apasionados por soluciones tecnológicas relacionadas con el agua,
+                    y con un fuerte compromiso con la conservación del medio ambiente. Nos dedicamos principalmente al
+                    riego agrícola, riego deportivo y sistemas de cosecha de lluvia. Nuestro presidente, un apasionado
+                    kayakista desde hace décadas, quedó fascinado desde el principio con la innovadora idea de pedalear
+                    sobre el agua y el diseño de última generación de las Manta5. Decidimos incorporar estas innovadoras
+                    bicicletas acuáticas a nuestra gama de productos, creando un departamento especializado para
+                    ofrecerlas a nuestros clientes.
                 </h3>
                 <div className="grid flex-1 place-content-center">
                     <Image

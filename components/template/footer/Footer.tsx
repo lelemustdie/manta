@@ -7,6 +7,7 @@ const FOOTER_ITEMS = [
         links: [
             { title: "SL3", href: "/sl3" },
             { title: "Lista de precios", href: "/listaprecios" },
+            {title: "Galeria", href: '/'}
         ],
     },
     {
