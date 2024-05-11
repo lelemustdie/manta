@@ -50,6 +50,7 @@ export default function NavBar({ withTransition = false }) {
                         navbarHeightClass,
                         navbarColorClass,
                     )
+                    navbar?.classList.add("bg-transparent")
                 }
             }
 
