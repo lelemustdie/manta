@@ -10,37 +10,7 @@ export type Slide = {
     alt: string
 }
 
-const slides: Slide[] = [
-    {
-        src: "/slides/SL3_1.webp",
-        alt: "SL3 front foil",
-    },
-    {
-        src: "/slides/SL3_2.webp",
-        alt: "sl3 rear foil",
-    },
-    {
-        src: "/slides/SL3_3.webp",
-        alt: "sl3 rear foil",
-    },
-    {
-        src: "/slides/SL3_4.webp",
-        alt: "sl3 rear foil",
-    },
-    {
-        src: "/slides/SL3_5.webp",
-        alt: "sl3 rear foil",
-    },
-    {
-        src: "/slides/SL3_6.webp",
-        alt: "sl3 pro remote",
-    },
-    {
-        src: "/slides/SL3_7.webp",
-        alt: "sl3 pro remote",
-    },
-]
-export function Carousel() {
+export function Carousel({slides}: {slides: Slide[]}) {
     const [selectedIndex, setSelectedIndex] = useState(0)
     const [emblaMainRef, emblaMainApi] = useEmblaCarousel()
     const [emblaThumbsRef, emblaThumbsApi] = useEmblaCarousel({
