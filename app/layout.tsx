@@ -33,8 +33,9 @@ const magistral = localFont({
 })
 
 export const metadata: Metadata = {
-    title: "Manta",
-    description: "This is Mantastic!",
+    title: "Aquabike",
+    description:
+        "Aquabike Hydrofoil bikes are designed to replicate the cycling experience on water. No roads, no traffic. Join the growing community of water-riders.",
 }
 
 export default function RootLayout({
