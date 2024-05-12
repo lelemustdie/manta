@@ -63,7 +63,7 @@ export default function ContactForm() {
                 label="Mensaje"
                 name="message"
                 id="message"
-                placeholder="¡Esperamos tu mensaje/consulta!"
+                placeholder="DISPONIBILIDAD SÓLO EN ARGENTINA Y URUGUAY. ¡Esperamos tu mensaje/consulta! "
                 required
             />
             <div className="grid place-content-end sm:place-content-center">

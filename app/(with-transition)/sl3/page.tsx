@@ -75,7 +75,7 @@ export default function Sl3() {
                 <CardList list={cards} />
                 <div className="flex justify-center">
                     <Link href={"/listaprecios"}>
-                        <Button className="flex w-72 flex-col border-transparent bg-red-500 text-manta-signal-white opacity-90 hover:opacity-100">
+                        <Button className="flex w-72 flex-col border-transparent bg-red-500 text-manta-signal-white hover:opacity-80">
                             Características
                         </Button>
                     </Link>
