@@ -51,25 +51,17 @@ const slides: Slide[] = [
         alt: "rider xp",
     },
     {
-        src: "/riderxp/SL3_3.webp",
+        src: "/riderxp/xp3.jpg",
         alt: "rider xp",
     },
     {
-        src: "/slides/SL3_4.webp",
+        src: "/riderxp/xp4.jpg",
         alt: "rider xp",
     },
     {
-        src: "/slides/SL3_5.webp",
+        src: "/riderxp/xp5.jpg",
         alt: "rider xp",
-    },
-    {
-        src: "/slides/SL3_6.webp",
-        alt: "rider xp",
-    },
-    {
-        src: "/slides/SL3_7.webp",
-        alt: "rider xp",
-    },
+    }
 ]
 
 export default function Sl3() {
@@ -106,12 +98,12 @@ export default function Sl3() {
                     <ContactForm/>
                 </div>
             </section>
-            <section className='bg-manta-ms-black'>
+            <section className='bg-manta-ms-black sm:h-fit'>
                 <h1 className='text-5xl text-center'>Experiencia de montar</h1>
                 <h2 className='text-center text-manta-red font-semibold mt-4'>Si puedes andar en bicicleta y nadar,
                     puedes andar en el Hydrofoiler SL3</h2>
-                <div className='grid-cols-2 grid items-center '>
-                    <div className='space-y-6 p-8'>
+                <div className='grid-cols-2 grid items-center sm: text-center p-0 sm:flex sm:flex-col !h-fit sm:grid-cols-[1fr_2fr] sm:items-center gap-3'>
+                    <div className='space-y-6 p-8 sm:w-full flex flex-col sm:p-2'>
                         <h3>
                             El propósito de Manta5 ha sido replicar una experiencia de ciclismo intuitiva en el
                             agua.</h3>
@@ -128,8 +120,7 @@ export default function Sl3() {
                         </h3>
                     </div>
 
-
-                    <div className='col-2'><Carousel slides={slides}/></div>
+                    <div className='col-2 p-12 relative w-full max-w-[1100px] sm:p-0'><Carousel slides={slides}/></div>
 
 
                 </div>
