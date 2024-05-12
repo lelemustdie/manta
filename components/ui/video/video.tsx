@@ -1,7 +1,13 @@
-export default function Video({ src }: { src: string }) {
+export default function Video({
+    src,
+    className = "",
+}: {
+    src: string
+    className?: string
+}) {
     return (
         <video
-            className="absolute left-0 top-0 -z-[1] h-full w-full object-cover"
+            className={`absolute left-0 top-0 -z-[1] h-full w-full object-cover ${className}`}
             id={"video"}
             autoPlay
             loop

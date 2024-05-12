@@ -36,8 +36,8 @@ const slides: Slide[] = [
 export default function Home() {
     return (
         <>
-            <section>
-                <Video src={"/main_video.mp4"} />
+            <section className="bg-manta-signal-white">
+                <Video src={"/main_video.mp4"} className="!z-0" />
             </section>
 
             <section className="!h-fit bg-manta-signal-white">
@@ -52,7 +52,10 @@ export default function Home() {
                     <h1 className="flex text-center text-5xl">
                         Un nuevo tiempo de aventuras
                     </h1>
-                    <h3 className='text-3xl text-manta-red text-center'>El disfrute de deslizarse sobre el agua en una bicicleta con Hydrofoil</h3>
+                    <h3 className="text-center text-3xl text-manta-red">
+                        El disfrute de deslizarse sobre el agua en una bicicleta
+                        con Hydrofoil
+                    </h3>
                     <p className="text-xl">
                         Atrás quedaron los carriles para bicicletas, el tráfico
                         y los senderos para peatones. La libertad del agua te
