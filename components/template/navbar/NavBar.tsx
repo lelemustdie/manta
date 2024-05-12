@@ -8,7 +8,7 @@ const NAVBAR_ITEMS = [
     { title: "SL3", href: "/sl3" },
     { title: "Lista de precios / Características", href: "/listaprecios" },
     { title: "Contacto", href: "/contacto" },
-    { title: "Galeria", href: "/galeria"}
+    { title: "Galería", href: "/galeria"}
 ]
 
 const animations: AnimationProps = {

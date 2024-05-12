@@ -35,7 +35,7 @@ const magistral = localFont({
 export const metadata: Metadata = {
     title: "Aquabike",
     description:
-        "Aquabike Hydrofoil bikes are designed to replicate the cycling experience on water. No roads, no traffic. Join the growing community of water-riders.",
+        "Las bicicletas Aquabike Hydrofoil están diseñadas para replicar la experiencia de andar en bicicleta sobre el agua. Sin carreteras, sin tráfico. Únete a la creciente comunidad de ciclistas acuáticos.",
 }
 
 export default function RootLayout({

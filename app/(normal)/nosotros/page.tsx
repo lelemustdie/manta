@@ -19,22 +19,21 @@ export default function Nosotros() {
             </section>
             <section
                 className="flex !h-fit items-center justify-between gap-10 bg-manta-light-grey text-manta-ms-black md:flex-col md:!p-10">
-                <h3 className="flex-1 items-center">
-                    HMSA es una empresa de ingenieros apasionados por soluciones tecnológicas relacionadas con el agua,
-                    y con un fuerte compromiso con la conservación del medio ambiente. Nos dedicamos principalmente al
-                    riego agrícola, riego deportivo y sistemas de cosecha de lluvia. Nuestro presidente, un apasionado
-                    kayakista desde hace décadas, quedó fascinado desde el principio con la innovadora idea de pedalear
-                    sobre el agua y el diseño de última generación de las Manta5. Decidimos incorporar estas innovadoras
-                    bicicletas acuáticas a nuestra gama de productos, creando un departamento especializado para
-                    ofrecerlas a nuestros clientes.
-                </h3>
+
+
+                    <h3 className="flex-1 items-center">
+                        HMSA es una empresa de ingenieros apasionados por soluciones tecnológicas relacionadas con el agua,
+                        y con un fuerte compromiso con la conservación del medio ambiente. Nos dedicamos principalmente al
+                        riego agrícola, riego deportivo y sistemas de cosecha de lluvia. Nuestro presidente, un apasionado
+                        kayakista desde hace décadas, quedó fascinado desde el principio con la innovadora idea de pedalear
+                        sobre el agua y el diseño de última generación de las Manta5. Decidimos incorporar estas innovadoras
+                        bicicletas acuáticas a nuestra gama de productos, creando un departamento especializado para
+                        su comercialización y asistencia técnica.
+                    </h3>
+
+
                 <div className="grid flex-1 place-content-center">
-                    <Image
-                        src={"/bici.webp"}
-                        alt={"bici"}
-                        width={600}
-                        height={423}
-                    />
+                    <a href={'https://www.hmsa.com.ar'}><Image src={"/colorkit.svg"} alt={'HMSA Logo'} width={500} height={200}/></a>
                 </div>
             </section>
         </>
