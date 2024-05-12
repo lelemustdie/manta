@@ -102,7 +102,7 @@ export default function Sl3() {
                 <h1 className='text-5xl text-center'>Experiencia de montar</h1>
                 <h2 className='text-center text-manta-red font-semibold mt-4'>Si puedes andar en bicicleta y nadar,
                     puedes andar en el Hydrofoiler SL3</h2>
-                <div className='grid-cols-2 grid items-center sm: text-center p-0 sm:flex sm:flex-col !h-fit sm:grid-cols-[1fr_2fr] sm:items-center gap-3'>
+                <div className="grid !h-fit grid-cols-[1fr_2fr] items-center gap-3 sm:grid-cols-1">
                     <div className='space-y-6 p-8 sm:w-full flex flex-col sm:p-2'>
                         <h3>
                             El propósito de Manta5 ha sido replicar una experiencia de ciclismo intuitiva en el
@@ -120,7 +120,7 @@ export default function Sl3() {
                         </h3>
                     </div>
 
-                    <div className='col-2 relative w-full max-w-[1100px] sm:p-0'><Carousel slides={slides}/></div>
+                    <div className='col-2 relative  p-12 w-full max-w-[1100px] sm:p-0'><Carousel slides={slides}/></div>
 
 
                 </div>

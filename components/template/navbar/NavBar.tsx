@@ -8,6 +8,7 @@ const NAVBAR_ITEMS = [
     { title: "SL3", href: "/sl3" },
     { title: "Lista de precios / Características", href: "/listaprecios" },
     { title: "Contacto", href: "/contacto" },
+    { title: "Galeria", href: "/galeria"}
 ]
 
 const animations: AnimationProps = {
@@ -72,6 +73,7 @@ export default function NavBar({ withTransition = false }) {
                 <h1 className=" inline-block bg-gradient-to-r from-manta-red via-red-900 to-manta-red bg-clip-text font-medium text-transparent">
                     AQUABIKE
                 </h1>
+                <h6 className='text-center font-light '>By Manta5</h6>
             </Link>
             <div className="flex flex-row gap-10 text-lg text-white  *:duration-300">
                 {NAVBAR_ITEMS.map(({ title, href }, index) => {
