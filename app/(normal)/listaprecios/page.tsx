@@ -8,7 +8,6 @@ import Carbonfoils from "@/assets/icons/carbonfoils"
 import Ip from "@/assets/icons/ipx8"
 import SvgDisplay from "@/components/svg_title/SvgtITitlte"
 import Image from "next/image"
-import Button from "@/components/ui/button/Button"
 import Link from "next/link"
 
 const svgs = [
@@ -222,7 +221,7 @@ export default function ListaPrecios() {
                     </h3>
                     <Link
                         href={"/contacto"}
-                        className="flex items-center justify-center gap-2 w-60 rounded-md bg-manta-red p-3 text-lg tracking-wider opacity-70 hover:opacity-100"
+                        className="flex items-center justify-center gap-2 w-60 rounded-md bg-manta-red p-3 text-lg tracking-wider  hover:opacity-80"
                     >
                         Reservá tu SL3
                     </Link>
@@ -240,7 +239,7 @@ export default function ListaPrecios() {
 
                     <Link
                         href={"/contacto"}
-                        className="flex items-center justify-center gap-2  rounded-md w-60 bg-manta-red p-3 text-lg tracking-wider opacity-70 hover:opacity-100"
+                        className="flex items-center justify-center gap-2  rounded-md w-60 bg-manta-red p-3 text-lg tracking-wider hover:opacity-80"
                     >
                         Reservá tu SL3 PRO
                     </Link>
