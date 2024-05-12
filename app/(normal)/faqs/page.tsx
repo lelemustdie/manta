@@ -80,7 +80,7 @@ const FAQS = [
     },
     {
         question: "¿Cuánto tiempo tarda en recargarse?",
-        answer: "Tiempo de carga: aproximadamente 3 horas para el Hydropack 600 y 5 horas para el Hydropack 1000. Próximamente estará disponible la opción de supercargador.",
+        answer: "Tiempo de carga: aproximadamente 2 horas para el Hydropack 600 y 3 horas para el Hydropack 1000. Próximamente estará disponible la opción de supercargador.",
     },
     {
         question: "¿Cuánto dura la carga de una batería?",
