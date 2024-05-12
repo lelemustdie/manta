@@ -4,6 +4,8 @@ import Video from "@/components/ui/video/video"
 import Image from "next/image"
 import Button from "@/components/ui/button/Button"
 import Link from "next/link"
+import {Carousel, Slide} from "@/components/ui/carousel/Carousel";
+
 const cards = [
     {
         src: "/SL3.webp",
@@ -39,18 +41,50 @@ const cards = [
     },
 ]
 
+const slides: Slide[] = [
+    {
+        src: "/riderxp/xp1.png",
+        alt: "rider xp",
+    },
+    {
+        src: "/riderxp/xp2.JPG",
+        alt: "rider xp",
+    },
+    {
+        src: "/riderxp/SL3_3.webp",
+        alt: "rider xp",
+    },
+    {
+        src: "/slides/SL3_4.webp",
+        alt: "rider xp",
+    },
+    {
+        src: "/slides/SL3_5.webp",
+        alt: "rider xp",
+    },
+    {
+        src: "/slides/SL3_6.webp",
+        alt: "rider xp",
+    },
+    {
+        src: "/slides/SL3_7.webp",
+        alt: "rider xp",
+    },
+]
+
 export default function Sl3() {
     return (
         <>
             <section className="relative flex items-end overflow-hidden">
-                <Video src={"/bg-video.mp4"} />
+                <Video src={"/bg-video.mp4"}/>
                 <h1 className="text-6xl font-bold sm:mb-10">Nueva SL3</h1>
             </section>
             <section className="grid !h-fit min-h-screen place-content-center bg-manta-light-grey">
-                <CardList list={cards} />
+                <CardList list={cards}/>
                 <div className="flex justify-center">
                     <Link href={"/listaprecios"}>
-                        <Button className="flex w-72 flex-col border-transparent bg-red-500 text-manta-signal-white opacity-90 hover:opacity-100">
+                        <Button
+                            className="flex w-72 flex-col border-transparent bg-red-500 text-manta-signal-white opacity-90 hover:opacity-100">
                             Características
                         </Button>
                     </Link>
@@ -69,7 +103,35 @@ export default function Sl3() {
                     <h2 className="mb-5 text-center text-4xl font-bold text-manta-signal-white">
                         Contacto
                     </h2>
-                    <ContactForm />
+                    <ContactForm/>
+                </div>
+            </section>
+            <section className='bg-manta-ms-black'>
+                <h1 className='text-5xl text-center'>Experiencia de montar</h1>
+                <h2 className='text-center text-manta-red font-semibold mt-4'>Si puedes andar en bicicleta y nadar,
+                    puedes andar en el Hydrofoiler SL3</h2>
+                <div className='grid-cols-2 grid items-center '>
+                    <div className='space-y-6 p-8'>
+                        <h3>
+                            El propósito de Manta5 ha sido replicar una experiencia de ciclismo intuitiva en el
+                            agua.</h3>
+                        <h3>Ser
+                            ágil, rápido, capaz de girar y deslizarse significaba no conformarse con flotadores
+                            voluminosos o cascos. Es un compromiso bienvenido que fomenta el aprendizaje y la mejora, y,
+                            en última
+                            instancia, a disfrutar de cada sesión.</h3>
+
+                        <h3>Caerse y mojarse es parte de la diversión. En menos de una hora, puedes pasar de ser un
+                            principiante a sentirte seguro. A partir de ahí, agrega agua dulce y salada a tu nuevo
+                            terreno de
+                            ciclismo.
+                        </h3>
+                    </div>
+
+
+                    <div className='col-2'><Carousel slides={slides}/></div>
+
+
                 </div>
             </section>
         </>
