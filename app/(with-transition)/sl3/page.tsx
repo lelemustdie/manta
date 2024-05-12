@@ -120,7 +120,7 @@ export default function Sl3() {
                         </h3>
                     </div>
 
-                    <div className='col-2 p-12 relative w-full max-w-[1100px] sm:p-0'><Carousel slides={slides}/></div>
+                    <div className='col-2 relative w-full max-w-[1100px] sm:p-0'><Carousel slides={slides}/></div>
 
 
                 </div>

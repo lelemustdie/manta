@@ -209,7 +209,7 @@ export default function ListaPrecios() {
                     Precios válidos para <b>Argentina</b> y <b>Uruguay</b>
                 </h5>
             </section>
-            <div className="flex flex-wrap justify-center gap-8 bg-white sm:flex sm:flex-col">
+            <div className="flex flex-row justify-center gap-8 bg-white !pt-0  sm:!pt-10 sm:flex sm:flex-col">
                 <div className="flex w-fit flex-col items-center justify-center gap-8 rounded-md border border-gray-600/10 px-10 py-10">
                     <Image
                         src={"/SL3.webp"}
@@ -222,7 +222,7 @@ export default function ListaPrecios() {
                     </h3>
                     <Link
                         href={"/contacto"}
-                        className="flex items-center justify-center gap-2 rounded-md bg-manta-red p-3 text-lg tracking-wider opacity-70 hover:opacity-100"
+                        className="flex items-center justify-center gap-2 w-60 rounded-md bg-manta-red p-3 text-lg tracking-wider opacity-70 hover:opacity-100"
                     >
                         Reservá tu SL3
                     </Link>
@@ -240,7 +240,7 @@ export default function ListaPrecios() {
 
                     <Link
                         href={"/contacto"}
-                        className="flex items-center justify-center gap-2 rounded-md bg-manta-ms-black p-3 text-lg tracking-wider opacity-70 hover:opacity-100"
+                        className="flex items-center justify-center gap-2  rounded-md w-60 bg-manta-red p-3 text-lg tracking-wider opacity-70 hover:opacity-100"
                     >
                         Reservá tu SL3 PRO
                     </Link>
