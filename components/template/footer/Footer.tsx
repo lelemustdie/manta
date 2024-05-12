@@ -36,7 +36,7 @@ export default function Footer() {
             {FOOTER_ITEMS.map(({ title, links }, containerIdx) => {
                 return (
                     <div
-                        className="flex flex-col justify-center gap-y-1.5 sm:w-full sm:justify-center sm:text-center"
+                        className="flex flex-col justify-center gap-y-1.5 sm:w-full  sm:justify-center sm:text-center"
                         key={`footer-col-${containerIdx}`}
                     >
                         <h4 className="font-medium">{title}</h4>

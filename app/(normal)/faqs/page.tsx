@@ -29,7 +29,7 @@ const FAQS = [
     },
     {
         question: "¿Se puede conducir el Hydrofoiler en olas?",
-        answer: "El riesgo de montar en olas recae sobre el conductor. Las mejores experiencias de conducción se logran sobre una ola rodante después de que rompe. Los hidrofoilers son más pesados que una tabla de surf o SUP y nunca deben usarse cerca de otras personas (nadadores, surfistas) en una zona de surf.",
+        answer: "El riesgo de montar en olas recae sobre el conductor. Las mejores experiencias de conducción se logran sobre una ola rodante después de que rompe. Los hydrofoilers son más pesados que una tabla de surf o SUP y nunca deben usarse cerca de otras personas (nadadores, surfistas) en una zona de surf.",
     },
     {
         question: "¿Qué tipo de mantenimiento se requiere?",
@@ -42,7 +42,7 @@ const FAQS = [
     },
     {
         question: "¿Puedo usarlo en agua salada?",
-        answer: "Los hidrofoils están diseñados para su uso en agua salada, pero como la mayoría de los productos utilizados en agua salada, deben enjuagarse con agua dulce después de su uso.",
+        answer: "Los hydrofoils están diseñados para su uso en agua salada, pero como la mayoría de los productos utilizados en agua salada, deben enjuagarse con agua dulce después de su uso.",
     },
     {
         question: "¿Es fácil de aprender?",
