@@ -6,6 +6,7 @@ export default function Video({ src }: { src: string }) {
             autoPlay
             loop
             muted
+            playsInline
         >
             <source src={src} type="video/mp4" />
         </video>
