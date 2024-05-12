@@ -4,7 +4,7 @@ import Video from "@/components/ui/video/video"
 import Image from "next/image"
 import Button from "@/components/ui/button/Button"
 import Link from "next/link"
-import {Carousel, Slide} from "@/components/ui/carousel/Carousel";
+import { Carousel, Slide } from "@/components/ui/carousel/Carousel"
 
 const cards = [
     {
@@ -61,22 +61,21 @@ const slides: Slide[] = [
     {
         src: "/riderxp/xp5.jpg",
         alt: "rider xp",
-    }
+    },
 ]
 
 export default function Sl3() {
     return (
         <>
             <section className="relative flex items-end overflow-hidden">
-                <Video src={"/bg-video.mp4"}/>
+                <Video src={"/bg-video.mp4"} />
                 <h1 className="text-6xl font-bold sm:mb-10">Nueva SL3</h1>
             </section>
             <section className="grid !h-fit min-h-screen place-content-center bg-manta-light-grey">
-                <CardList list={cards}/>
+                <CardList list={cards} />
                 <div className="flex justify-center">
                     <Link href={"/listaprecios"}>
-                        <Button
-                            className="flex w-72 flex-col border-transparent bg-red-500 text-manta-signal-white opacity-90 hover:opacity-100">
+                        <Button className="flex w-72 flex-col border-transparent bg-red-500 text-manta-signal-white opacity-90 hover:opacity-100">
                             Características
                         </Button>
                     </Link>
@@ -95,34 +94,40 @@ export default function Sl3() {
                     <h2 className="mb-5 text-center text-4xl font-bold text-manta-signal-white">
                         Contacto
                     </h2>
-                    <ContactForm/>
+                    <ContactForm />
                 </div>
             </section>
-            <section className='bg-manta-ms-black sm:h-fit'>
-                <h1 className='text-5xl text-center'>Experiencia de montar</h1>
-                <h2 className='text-center text-manta-red font-semibold mt-4'>Si puedes andar en bicicleta y nadar,
-                    puedes andar en el Hydrofoiler SL3</h2>
-                <div className="grid !h-fit grid-cols-[1fr_2fr] items-center gap-3 sm:grid-cols-1">
+            <section className="!h-fit min-h-screen bg-manta-ms-black sm:min-h-fit">
+                <h1 className="text-center text-5xl">Experiencia de montar</h1>
+                <h2 className="mt-4 text-center font-semibold text-manta-red">
+                    Si puedes andar en bicicleta y nadar, puedes andar en el
+                    Hydrofoiler SL3
+                </h2>
+                <div className="grid !h-fit grid-cols-[1fr_2fr] items-center gap-3 lg:grid-cols-1">
                     <div className="flex flex-col gap-8 p-4">
                         <h3>
-                            El propósito de Manta5 ha sido replicar una experiencia de ciclismo intuitiva en el
-                            agua.</h3>
-                        <h3>Ser
-                            ágil, rápido, capaz de girar y deslizarse significaba no conformarse con flotadores
-                            voluminosos o cascos. Es un compromiso bienvenido que fomenta el aprendizaje y la mejora, y,
-                            en última
-                            instancia, a disfrutar de cada sesión.</h3>
+                            El propósito de Manta5 ha sido replicar una
+                            experiencia de ciclismo intuitiva en el agua.
+                        </h3>
+                        <h3>
+                            Ser ágil, rápido, capaz de girar y deslizarse
+                            significaba no conformarse con flotadores
+                            voluminosos o cascos. Es un compromiso bienvenido
+                            que fomenta el aprendizaje y la mejora, y, en última
+                            instancia, a disfrutar de cada sesión.
+                        </h3>
 
-                        <h3>Caerse y mojarse es parte de la diversión. En menos de una hora, puedes pasar de ser un
-                            principiante a sentirte seguro. A partir de ahí, agrega agua dulce y salada a tu nuevo
-                            terreno de
-                            ciclismo.
+                        <h3>
+                            Caerse y mojarse es parte de la diversión. En menos
+                            de una hora, puedes pasar de ser un principiante a
+                            sentirte seguro. A partir de ahí, agrega agua dulce
+                            y salada a tu nuevo terreno de ciclismo.
                         </h3>
                     </div>
 
-                    <div className='col-2 relative  p-12 w-full max-w-[1100px] sm:p-0'><Carousel slides={slides}/></div>
-
-
+                    <div className="col-2 relative  w-full max-w-[1100px] p-12 lg:p-0">
+                        <Carousel slides={slides} />
+                    </div>
                 </div>
             </section>
         </>
