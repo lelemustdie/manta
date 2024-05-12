@@ -103,7 +103,7 @@ export default function Sl3() {
                 <h2 className='text-center text-manta-red font-semibold mt-4'>Si puedes andar en bicicleta y nadar,
                     puedes andar en el Hydrofoiler SL3</h2>
                 <div className="grid !h-fit grid-cols-[1fr_2fr] items-center gap-3 sm:grid-cols-1">
-                    <div className='space-y-6 p-8 sm:w-full flex flex-col sm:p-2'>
+                    <div className="flex flex-col gap-8 p-4">
                         <h3>
                             El propósito de Manta5 ha sido replicar una experiencia de ciclismo intuitiva en el
                             agua.</h3>
