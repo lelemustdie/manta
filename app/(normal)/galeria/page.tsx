@@ -76,8 +76,10 @@ export default function Gallery() {
                         <Image
                             src={src}
                             alt={alt}
-                            layout="fill"
+                            fill
                             style={{ objectFit: "cover" }}
+                            sizes="100%"
+                            priority
                         />
                     </div>
                 )
