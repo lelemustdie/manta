@@ -30,8 +30,9 @@ const FOOTER_ITEMS = [
 export default function Footer() {
     return (
         <footer className="grid h-[200px] grid-cols-[1fr_2fr] items-center justify-items-center bg-black p-10 px-24 font-light text-white sm:h-full sm:auto-rows-min sm:grid-cols-1 sm:gap-5 sm:p-10">
-            <div className="flex flex-col justify-center gap-y-1.5">
+            <div className="flex flex-col justify-center items-center gap-y-1.5">
                 <Logo />
+                🇦🇷  🇺🇾
             </div>
             <div className="flex flex-row gap-10 sm:flex-col sm:gap-5">
                 {FOOTER_ITEMS.map(({ title, links }, containerIdx) => {
