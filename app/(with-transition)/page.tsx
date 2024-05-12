@@ -36,8 +36,14 @@ const slides: Slide[] = [
 export default function Home() {
     return (
         <>
-            <section className="bg-manta-signal-white">
+            <section className="flex flex-col justify-end bg-manta-signal-white">
                 <Video src={"/main_video.mp4"} className="!z-0" />
+                <div className="z-[1] w-fit text-center">
+                    <h1 className="text-5xl font-bold">Ya llegamos</h1>
+                    <h3 className="">
+                        Ahora en <b>Argentina</b> y <b>Uruguay</b>
+                    </h3>
+                </div>
             </section>
 
             <section className="!h-fit bg-manta-signal-white">
