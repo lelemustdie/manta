@@ -4,11 +4,11 @@ import Image from "next/image"
 export default function Contact() {
     return (
         <>
-            <section className="relative grid !h-fit !min-h-screen w-full grid-cols-2 overflow-hidden sm:grid-cols-1">
+            <section className="relative grid !h-fit !min-h-screen w-full grid-cols-2 overflow-hidden sm:block">
                 <Image
                     src="/viejobicicletero.webp"
                     alt="Contacto para comprar sl3"
-                    className="left-50 fixed top-0 z-[-2] h-full w-full object-cover"
+                    className="left-50 fixed top-0 z-[-2] h-full w-full object-cover sm:left-0"
                     width={1920}
                     height={1080}
                     sizes="100vw"
