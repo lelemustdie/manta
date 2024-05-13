@@ -168,7 +168,7 @@ export default function ListaPrecios() {
                             <tr className="bg-manta-light-grey">
                                 <td className="font-bold">SL3</td>
                                 <td>Eléctrico / 2500</td>
-                                <td>600W</td>
+                                <td>600</td>
                                 <td>iones de litio</td>
                                 <td>2.7</td>
                                 <td>2</td>
@@ -180,7 +180,7 @@ export default function ListaPrecios() {
                             <tr>
                                 <td className="font-bold">SL3+</td>
                                 <td>Eléctrico / 2500</td>
-                                <td>1000W</td>
+                                <td>1000</td>
                                 <td>iones de litio</td>
                                 <td>4.2</td>
                                 <td>3</td>
@@ -192,7 +192,7 @@ export default function ListaPrecios() {
                             <tr className="bg-manta-light-grey">
                                 <td className="font-bold">SL3 PRO</td>
                                 <td>Eléctrico / 2500</td>
-                                <td>1000W</td>
+                                <td>1000</td>
                                 <td>iones de litio</td>
                                 <td>4.5</td>
                                 <td>3</td>
