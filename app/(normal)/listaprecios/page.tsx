@@ -205,10 +205,11 @@ export default function ListaPrecios() {
                     </table>
                 </div>
                 <h5 className="mt-9 text-manta-ms-black">
-                    Precios válidos para <b>Argentina</b> y <b>Uruguay</b>
+                    Precios válidos para <b>Argentina(🇦🇷)</b> y{" "}
+                    <b>Uruguay(🇺🇾)</b>
                 </h5>
             </section>
-            <div className="flex flex-row justify-center gap-8 bg-white !pt-0  sm:!pt-10 sm:flex sm:flex-col">
+            <div className="flex flex-row justify-center gap-8 bg-white !pt-0  sm:flex sm:flex-col sm:!pt-10">
                 <div className="flex w-fit flex-col items-center justify-center gap-8 rounded-md border border-gray-600/10 px-10 py-10">
                     <Image
                         src={"/SL3.webp"}
@@ -221,7 +222,7 @@ export default function ListaPrecios() {
                     </h3>
                     <Link
                         href={"/contacto"}
-                        className="flex items-center justify-center gap-2 w-60 rounded-md bg-manta-red p-3 text-lg tracking-wider  hover:opacity-80"
+                        className="flex w-60 items-center justify-center gap-2 rounded-md bg-manta-red p-3 text-lg tracking-wider  hover:opacity-80"
                     >
                         Reservá tu SL3
                     </Link>
@@ -239,7 +240,7 @@ export default function ListaPrecios() {
 
                     <Link
                         href={"/contacto"}
-                        className="flex items-center justify-center gap-2  rounded-md w-60 bg-manta-red p-3 text-lg tracking-wider hover:opacity-80"
+                        className="flex w-60 items-center justify-center  gap-2 rounded-md bg-manta-red p-3 text-lg tracking-wider hover:opacity-80"
                     >
                         Reservá tu SL3 PRO
                     </Link>

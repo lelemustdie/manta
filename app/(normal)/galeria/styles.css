@@ -82,12 +82,11 @@
 }
 
 .gallery .image-container img {
-    filter: brightness(0.4);
     transition: 0.3s ease-in-out;
 }
 
 .gallery .image-container:hover img {
-    filter: brightness(1);
+    transform: scale(1.1);
 }
 
 @media screen and (max-width: 850px) {
