@@ -151,8 +151,8 @@ export default function ListaPrecios() {
                         <thead>
                             <tr className="bg-manta-red text-manta-light-grey *:p-4">
                                 <th>Modelo</th>
-                                <th>Tipo de motor/potencia (vatios)</th>
-                                <th>Capacidad de la batería (w)</th>
+                                <th>Tipo de motor/potencia (W)</th>
+                                <th>Capacidad de la batería (Wh)</th>
                                 <th>Tipo de Batería</th>
                                 <th>Máx. Tiempo de autonomía (horas)</th>
                                 <th>Tiempo de carga de la batería (horas)</th>
@@ -171,7 +171,7 @@ export default function ListaPrecios() {
                                 <td>600W</td>
                                 <td>iones de litio</td>
                                 <td>2.7</td>
-                                <td>3</td>
+                                <td>2</td>
                                 <td>Fibra</td>
                                 <td>38.8</td>
                                 <td>140 x 200 x 220 cm.</td>
@@ -183,7 +183,7 @@ export default function ListaPrecios() {
                                 <td>1000W</td>
                                 <td>iones de litio</td>
                                 <td>4.2</td>
-                                <td>5</td>
+                                <td>3</td>
                                 <td>Fibra</td>
                                 <td>40.3</td>
                                 <td>140 x 200 x 220 cm.</td>
@@ -195,7 +195,7 @@ export default function ListaPrecios() {
                                 <td>1000W</td>
                                 <td>iones de litio</td>
                                 <td>4.5</td>
-                                <td>5</td>
+                                <td>3</td>
                                 <td>Carbon</td>
                                 <td>37.4</td>
                                 <td>140 x 200 x 220 cm.</td>
