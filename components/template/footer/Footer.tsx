@@ -30,9 +30,9 @@ const FOOTER_ITEMS = [
 export default function Footer() {
     return (
         <footer className="grid h-[200px] grid-cols-[1fr_2fr] items-center justify-items-center bg-black p-10 px-24 font-light text-white sm:h-full sm:auto-rows-min sm:grid-cols-1 sm:gap-5 sm:p-10">
-            <div className="flex flex-col justify-center items-center gap-y-1.5 w-64 text-center">
+            <div className="flex flex-col justify-center items-center gap-y-1.5 w-80 text-center">
                 <Logo />
-                Distribuidores oficiales de Manta5 en Argentina (🇦🇷) y Uruguay (🇺🇾)
+                Distribuidores oficiales de<a href={"https://manta5.com"} className='text-manta-red'>Manta5</a>en Argentina(🇦🇷) y Uruguay(🇺🇾)
             </div>
             <div className="flex flex-row gap-10 sm:flex-col sm:gap-5">
                 {FOOTER_ITEMS.map(({ title, links }, containerIdx) => {
