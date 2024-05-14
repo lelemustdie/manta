@@ -218,13 +218,13 @@ export default function ListaPrecios() {
                         height={340}
                     />
                     <h3 className="text-2xl text-manta-ms-black sm:text-center sm:text-2xl">
-                        SL3
+                        SL3 +
                     </h3>
                     <Link
                         href={"/contacto"}
                         className="flex w-60 items-center justify-center gap-2 rounded-md bg-manta-red p-3 text-lg tracking-wider  hover:opacity-80"
                     >
-                        Reservá tu SL3+
+                        Reservá tu SL3 +
                     </Link>
                 </div>
                 <div className="flex w-fit flex-col items-center justify-center gap-8 rounded-md border border-gray-600/10 px-10 py-10">
