@@ -224,7 +224,7 @@ export default function ListaPrecios() {
                         href={"/contacto"}
                         className="flex w-60 items-center justify-center gap-2 rounded-md bg-manta-red p-3 text-lg tracking-wider  hover:opacity-80"
                     >
-                        Reservá tu SL3
+                        Reservá tu SL3+
                     </Link>
                 </div>
                 <div className="flex w-fit flex-col items-center justify-center gap-8 rounded-md border border-gray-600/10 px-10 py-10">
